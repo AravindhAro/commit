@@ -23,7 +23,7 @@ public class DemoOneController {
 	private DemoOneService demoservice;
 	
 	
-	@RequestMapping(value = "/firstApi" ,method = RequestMethod.POST)
+	@RequestMapping(value = "/demo1" ,method = RequestMethod.POST)
 	public String demo(@RequestBody String name) {
 	String demodd=	demoservice.view(name);
 		return demodd;	
